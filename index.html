@@ -3,113 +3,251 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy — Budget Manage & Reminder</title>
+    <title>Privacy Policy — Budget Manage &amp; Reminder</title>
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
+        :root {
+            --primary: #00695C;
+            --primary-light: #B2DFDB;
+            --text: #263238;
+            --text-muted: #607D8B;
+            --bg: #FAFAF9;
+            --card: #FFFFFF;
+            --border: #E0E0E0;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background: var(--bg);
+            color: var(--text);
             line-height: 1.7;
-            color: #1a1a2e;
-            background: #f8f9fa;
-            padding: 0 16px;
+            padding: 24px 16px 60px;
         }
+
         .container {
-            max-width: 800px;
+            max-width: 860px;
             margin: 0 auto;
-            padding: 60px 0 80px;
+            background: var(--card);
+            border-radius: 14px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+            padding: 40px 48px;
         }
-        h1 {
-            font-size: 2rem;
-            color: #1565C0;
-            margin-bottom: 8px;
+
+        header {
+            border-bottom: 3px solid var(--primary);
+            padding-bottom: 20px;
+            margin-bottom: 32px;
         }
-        .meta {
-            color: #666;
-            font-size: 0.9rem;
-            margin-bottom: 40px;
+
+        header h1 {
+            font-size: 1.9rem;
+            color: var(--primary);
+            font-weight: 700;
         }
+
+        header p {
+            color: var(--text-muted);
+            margin-top: 6px;
+            font-size: 0.95rem;
+        }
+
         h2 {
-            font-size: 1.25rem;
-            color: #1a1a2e;
-            margin-top: 36px;
+            color: var(--primary);
+            font-size: 1.15rem;
+            margin-top: 34px;
             margin-bottom: 12px;
+            padding-bottom: 6px;
+            border-bottom: 1px solid var(--border);
         }
-        p, li {
-            font-size: 1rem;
-            color: #333;
-            margin-bottom: 12px;
-        }
-        ul {
-            padding-left: 24px;
-            margin-bottom: 12px;
-        }
+
+        h2:first-of-type { margin-top: 0; }
+
+        p { margin-bottom: 12px; }
+
+        ul { margin: 0 0 14px 22px; }
+
         li { margin-bottom: 6px; }
-        a { color: #1565C0; text-decoration: none; }
-        a:hover { text-decoration: underline; }
-        .section { margin-bottom: 28px; }
+
+        .badge {
+            display: inline-block;
+            background: var(--primary-light);
+            color: var(--primary);
+            font-weight: 600;
+            font-size: 0.8rem;
+            padding: 2px 10px;
+            border-radius: 999px;
+            vertical-align: middle;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 10px 0 18px;
+            font-size: 0.92rem;
+        }
+
+        th, td {
+            text-align: left;
+            padding: 10px 12px;
+            border: 1px solid var(--border);
+        }
+
+        th {
+            background: var(--primary);
+            color: #fff;
+            font-weight: 600;
+        }
+
+        td:first-child { font-weight: 600; }
+
+        tr:nth-child(even) { background: #F5F5F5; }
+
+        .notice {
+            background: #FFF8E1;
+            border-left: 4px solid #F9A825;
+            padding: 12px 16px;
+            border-radius: 6px;
+            margin: 14px 0;
+            font-size: 0.92rem;
+        }
+
+        .note {
+            color: var(--text-muted);
+            font-size: 0.85rem;
+            border-top: 1px solid var(--border);
+            margin-top: 36px;
+            padding-top: 14px;
+        }
+
+        @media (max-width: 640px) {
+            .container { padding: 24px 20px; }
+            header h1 { font-size: 1.5rem; }
+            table { display: block; overflow-x: auto; }
+        }
+
+        @media print {
+            body { background: #fff; padding: 0; }
+            .container { box-shadow: none; padding: 0; }
+        }
     </style>
 </head>
 <body>
-<div class="container">
-    <h1>Privacy Policy</h1>
-    <p class="meta">Effective date: August 22, 2026</p>
+    <div class="container">
+        <header>
+            <h1>Privacy Policy</h1>
+            <p>Budget Manage &amp; Reminder</p>
+            <p><strong>Last updated:</strong> September 9, 2026</p>
+        </header>
 
-    <div class="section">
-        <p>Budget Manage &amp; Reminder ("we", "us", or "our") is committed to protecting your privacy. This Privacy Policy explains how we handle information when you use our Android application.</p>
-    </div>
+        <p>This Privacy Policy explains how <strong>Budget Manage &amp; Reminder</strong> (&ldquo;we,&rdquo; &ldquo;our,&rdquo; or &ldquo;the App&rdquo;) collects, uses, and protects information. By using the App, you agree to the practices described below.</p>
 
-    <div class="section">
         <h2>1. Information We Collect</h2>
-        <p><strong>We do not collect, transmit, or share any personal data.</strong> All data you enter into the app — including transactions, bills, loans, budgets, categories, and payment methods — is stored entirely on your local device.</p>
-    </div>
 
-    <div class="section">
-        <h2>2. Data Storage</h2>
-        <p>All application data is stored locally in an SQLite database on your device. No data is sent to our servers. You may export and back up your data as a JSON file at any time through the app's settings.</p>
-    </div>
+        <h3>A. Information you enter <span class="badge">stored locally &mdash; never transmitted</span></h3>
+        <p>All financial data you enter &mdash; transactions, income, expenses, bills, loans, savings goals, reminders, and categories &mdash; is stored <strong>only on your device</strong> in the App&rsquo;s local database. <strong>This data is never sent to us or to any server.</strong> It is not accessible by us, advertisers, or analytics providers.</p>
 
-    <div class="section">
-        <h2>3. Third-Party Services</h2>
-        <p>This app uses the following third-party services, each governed by their own privacy policies:</p>
+        <h3>B. Information collected automatically (via Google services)</h3>
+        <p>The App uses Google services for ads, analytics, and crash reporting, which automatically collect:</p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Data</th>
+                    <th>Purpose</th>
+                    <th>Provider</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Advertising identifier</td>
+                    <td>Show relevant ads and measure ad performance</td>
+                    <td>Google AdMob</td>
+                </tr>
+                <tr>
+                    <td>Device / app-instance IDs</td>
+                    <td>Distinct-user analytics</td>
+                    <td>Firebase Analytics</td>
+                </tr>
+                <tr>
+                    <td>Crash logs &amp; diagnostics</td>
+                    <td>Fix bugs and improve stability (incl. ANRs)</td>
+                    <td>Firebase Crashlytics</td>
+                </tr>
+                <tr>
+                    <td>App interaction events</td>
+                    <td>Understand usage and improve the product</td>
+                    <td>Firebase Analytics</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>2. Advertisements</h2>
+        <p>The App displays ads provided by <strong>Google AdMob</strong> (banners and interstitial ads). AdMob may use your advertising identifier and device data to serve ads. You can opt out of personalized advertising at any time via your device settings (<em>Google &rarr; Ads &rarr; &ldquo;Opt out of Ads Personalization&rdquo;</em>).</p>
+        <p>In the European Economic Area and the United Kingdom, we request your consent before processing data for ads and analytics. Consent is collected through a consent screen presented on first launch.</p>
+
+        <h2>3. In-App Purchases (Premium)</h2>
+        <p>Purchasing <strong>Premium</strong> (removing ads) is processed entirely by <strong>Google Play</strong> and its billing system. We do not collect or store your payment information. Google Play handles payment details and receipts under its own privacy policy.</p>
+
+        <h2>4. Permissions We Use</h2>
+        <p>The App requests these permissions, used only for the stated purposes:</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Permission</th>
+                    <th>Purpose</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Camera</td>
+                    <td>Scanning paper receipts for expense tracking</td>
+                </tr>
+                <tr>
+                    <td>Photos / Storage</td>
+                    <td>Attaching receipt images to transactions</td>
+                </tr>
+                <tr>
+                    <td>Notifications</td>
+                    <td>Bill and loan payment reminders</td>
+                </tr>
+                <tr>
+                    <td>Exact alarms</td>
+                    <td>Delivery of reminders at precise times</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>5. How We Protect Your Data</h2>
+        <p>Financial data stays encrypted at rest on your device&rsquo;s secure app storage. No financial data is transmitted over the internet. Data shared with Google (analytics, crash logs, ads) is transmitted over encrypted connections (HTTPS).</p>
+
+        <h2>6. Your Choices</h2>
         <ul>
-            <li><strong>Google AdMob</strong> — Used to display advertisements. AdMob may collect device identifiers (such as Advertising ID) and interaction data to serve ads. <a href="https://policies.google.com/privacy" target="_blank">Google Privacy Policy</a></li>
-            <li><strong>Google Play Billing</strong> — Used to process in-app purchases (Remove Ads). Payment is handled entirely by Google Play. We do not have access to your payment details.</li>
+            <li><strong>Opt out of personalized ads:</strong> Device settings &rarr; Google &rarr; Ads &rarr; &ldquo;Opt out of Ads Personalization&rdquo;</li>
+            <li><strong>Revoke analytics consent:</strong> The EU consent prompt also covers analytics; you may revoke consent at any time in your device&rsquo;s app settings</li>
+            <li><strong>Delete your data:</strong> Uninstalling the App permanently removes all locally stored financial data. Backup files you export are yours and you control them.</li>
         </ul>
-    </div>
 
-    <div class="section">
-        <h2>4. Permissions</h2>
-        <p>The app requests the following permissions for specific features:</p>
-        <ul>
-            <li><strong>Notifications</strong> — To send bill and loan payment reminders.</li>
-            <li><strong>Exact Alarms</strong> — To schedule reminders at precise times.</li>
-            <li><strong>Boot Completed</strong> — To reschedule reminders after your device restarts.</li>
-            <li><strong>Camera</strong> — Optional, used for scanning receipts.</li>
-            <li><strong>Storage / Media</strong> — To export backup files and import them back.</li>
-            <li><strong>Internet</strong> — Required for loading advertisements and currency exchange rates.</li>
-        </ul>
-    </div>
+        <h2>7. No Sale of Data</h2>
+        <p>We do <strong>not</strong> sell, rent, or trade your personal information to any third party. Data shared is limited to the Google services described above for ads, analytics, and crash reporting.</p>
 
-    <div class="section">
-        <h2>5. Data Security</h2>
-        <p>Since all data remains on your device, we do not have access to it. We employ standard Android security practices, including encrypted storage where supported by the operating system.</p>
-    </div>
+        <h2>8. Children&rsquo;s Privacy</h2>
+        <p>The App is intended for users aged <strong>18 and over</strong>. It does not knowingly collect data from children.</p>
 
-    <div class="section">
-        <h2>6. Children's Privacy</h2>
-        <p>This app is not directed at children under the age of 13. We do not knowingly collect any information from children.</p>
-    </div>
+        <h2>9. Data Retention</h2>
+        <p>Local financial data is retained until you delete it or uninstall the App. Analytics and crash data are retained by Google according to its retention policies. The App has <strong>no user accounts</strong>, so there is no account data to delete.</p>
 
-    <div class="section">
-        <h2>7. Changes to This Policy</h2>
-        <p>We may update this Privacy Policy from time to time. Any changes will be reflected on this page with an updated effective date.</p>
-    </div>
+        <h2>10. Changes to This Policy</h2>
+        <p>We may update this policy to reflect changes in the App or legal requirements. Material changes will be posted at this URL with a revised &ldquo;last updated&rdquo; date.</p>
 
-    <div class="section">
-        <h2>8. Contact Us</h2>
-        <p>If you have any questions about this Privacy Policy, you can contact us at:</p>
-        <p><a href="mailto:neonbytstudio@gmail.com">neonbytstudio@gmail.com</a></p>
+        <h2>11. Contact Us</h2>
+        <p>If you have questions about this Privacy Policy, contact us at:</p>
+        <p>
+            <strong>neonbytstudio@gmail.com</strong><br>
+            NeonByt Studio
+        </p>
+
+        <p class="note">This Privacy Policy applies to Budget Manage &amp; Reminder and its services described above.</p>
     </div>
-</div>
 </body>
 </html>
